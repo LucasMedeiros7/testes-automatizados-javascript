@@ -18,4 +18,19 @@ export class Cart {
       return (acc += item.quantity * item.product.price);
     }, 0);
   }
+
+  remove(product) {
+    const productIndex = this.items.findIndex(
+      (item) => item.product === product
+    );
+
+    this.items.splice(productIndex, 1);
+  }
+
+  checkout() {
+    return {
+      total: this.getTotal(),
+      items: this.items,
+    };
+  }
 }
