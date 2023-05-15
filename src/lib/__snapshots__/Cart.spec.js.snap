@@ -21,3 +21,25 @@ Object {
   "total": 733104,
 }
 `;
+
+exports[`Cart checkout() should return an object with the total and the list of items when summary() is called 1`] = `
+Object {
+  "items": Array [
+    Object {
+      "product": Object {
+        "price": 65388,
+        "title": "NIKE SB DUNK LOW PRO",
+      },
+      "quantity": 5,
+    },
+    Object {
+      "product": Object {
+        "price": 135388,
+        "title": "JORDAN 1 LOW",
+      },
+      "quantity": 3,
+    },
+  ],
+  "total": 733104,
+}
+`;
